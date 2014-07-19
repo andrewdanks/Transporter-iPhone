@@ -299,7 +299,7 @@ NSString *templateReviewURLIpad = @"itms-apps://ax.itunes.apple.com/WebObjects/M
 	 into the foreground and we don't want to count app launches
 	 as two uses on multitasking devices. */
 	UIDevice *device = [UIDevice currentDevice];
-	if ([device respondsToSelector:@selector(multitaskingSupported)] &&
+	if ([device respondsToSelector:@selector(isMultitaskingSupported)] &&
 		device.multitaskingSupported)
 	{
 		return;

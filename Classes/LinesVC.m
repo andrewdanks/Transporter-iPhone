@@ -88,7 +88,7 @@
 - (void) loadNextViewController:(NSNotification *)note {
 
 	// if an actransit/muni line was selected
-	if (note.name == @"routeSelected") {
+	if ([note.name  isEqualToString: @"routeSelected"]) {
 
 		self.navigationItem.title = @"Lines";
 
@@ -100,7 +100,7 @@
 		[self.navigationController pushViewController:directionsTableViewController animated:YES];
 
 
-	} else if (note.name == @"stopSelected") {
+	} else if ([note.name isEqualToString: @"stopSelected"]) {
 
 		self.navigationItem.title = @"Stops";
 

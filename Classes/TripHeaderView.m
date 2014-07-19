@@ -136,7 +136,8 @@ const CGFloat kTripHeaderViewHeight = 22.0;
 	font = [UIFont fontWithName:@"Helvetica-Bold" size:13.0];
 	color = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
 	[color set];
-	[[self durationTitle] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+	//[[self durationTitle] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+    [[self durationTitle] drawInRect:drawRect withFont:font lineBreakMode:NSLineBreakByWordWrapping alignment:NSTextAlignmentRight];
 
 	drawRect = CGRectMake(6.0, 2.0, 243.0, 22.0);
 	drawRect.origin.x = round(resolution * drawRect.origin.x) / resolution;

@@ -16,6 +16,7 @@
 #import "Trip.h"
 #import "WalkingLeg.h"
 #import <CoreLocation/CoreLocation.h>
+#import "TripPlannerVC.h"
 
 @implementation TripFetcher
 

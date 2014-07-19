@@ -352,7 +352,8 @@ const CGFloat kTransitLegViewHeight = 154.0;
 	font = [UIFont fontWithName:@"Helvetica" size:13.0];
 	color = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
 	[color set];
-	[[self transferText] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentCenter];
+	//[[self transferText] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentCenter];
+    [[self transferText] drawInRect:drawRect withFont:font lineBreakMode:NSLineBreakByWordWrapping alignment:NSTextAlignmentRight];
 
 	// Endpoints
 
@@ -455,8 +456,8 @@ const CGFloat kTransitLegViewHeight = 154.0;
 	font = [UIFont fontWithName:@"Helvetica-Bold" size:15.0];
 	color = [UIColor colorWithRed:0.101 green:0.101 blue:0.101 alpha:1.0];
 	[color set];
-	[[self startTime] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
-
+//	[[self startTime] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+    [[self startTime] drawInRect:drawRect withFont:font lineBreakMode:NSLineBreakByWordWrapping alignment:NSTextAlignmentRight];
 	drawRect = CGRectMake(1.0, 128.0, 72.0, 22.0);
 	drawRect.origin.x = round(resolution * drawRect.origin.x) / resolution;
 	drawRect.origin.y = round(resolution * drawRect.origin.y) / resolution;
@@ -465,7 +466,8 @@ const CGFloat kTransitLegViewHeight = 154.0;
 	font = [UIFont fontWithName:@"Helvetica-Bold" size:15.0];
 	color = [UIColor colorWithRed:0.101 green:0.101 blue:0.101 alpha:1.0];
 	[color set];
-	[[self endTime] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+//	[[self endTime] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+    [[self endTime] drawInRect:drawRect withFont:font lineBreakMode:NSLineBreakByWordWrapping alignment:NSTextAlignmentRight];
 
 	// Layer 1
 

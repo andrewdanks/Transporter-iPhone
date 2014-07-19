@@ -215,7 +215,8 @@ const CGFloat kWalkingLegViewHeight = 53.0;
 	font = [UIFont fontWithName:@"Helvetica-Bold" size:15.0];
 	color = [UIColor colorWithRed:0.101 green:0.101 blue:0.101 alpha:1.0];
 	[color set];
-	[[self time] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+	//[[self time] drawInRect:drawRect withFont:font lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentRight];
+    [[self time] drawInRect:drawRect withFont:font lineBreakMode:NSLineBreakByWordWrapping alignment:NSTextAlignmentRight];
 
 	// Directions
 
